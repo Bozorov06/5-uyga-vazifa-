@@ -36,13 +36,13 @@
 // 4-masala
 // 1 dan 50 gacha bo‘lgan sonlar orasida 7 ga bo‘linadigan birinchi 3 ta sonni ekranga chiqaring, so‘ngra tsiklni to‘xtating.
 
+// let counter = 0;
 // for (let i = 1; i<=50; i++){
+//     if( counter =3){
+           
+//     }
 //     if (i % 7 == 0 ){
 //          console.log(i);
-//     }
-//     if (i==3){
-//         break;
-
 //     }
 // }
 
@@ -269,11 +269,14 @@
 // =================================================
 // 9-masala
 // Foydalanuvchidan butun son kiritishni so‘rang va bu sonni teskari ko‘rinishda chiqarib bering.
-// let i = +prompt("sonni kiriting");
-// while (i>1) {
-//   i--;
-//   console.log(i);  
+// let num = +prompt("sonni kiriting");
+// let sum = 0;
+// while (num >= 1) {
+//  sum = sum *10 + num % 10
+//  num = Math.trunc(num/10)
 // }
+// console.log(sum);
+
 
 // =================================================
 // 10-masala
@@ -319,6 +322,17 @@
 // =================================================
 // 14-masala
 // Foydalanuvchi “stop” so‘zini yozmaguncha davom eting. Oxirida nechta son kiritganini hisoblang.
+// let num = prompt('sonni kiriting')
+
+// let counter = 0;
+// while (num !='stop') {
+//     if (Number(num)){
+//         counter++
+//     }
+//      num = prompt("sonni kiriting");
+// }
+
+// console.log(counter);
 
 
 //=================================================
@@ -326,11 +340,13 @@
 // Foydalanuvchi kiritgan sonlarning o‘rtacha qiymatini hisoblang (nol kiritilganda tsikl to‘xtaydi).
 //   let n = +prompt('sonni kiriting')
 //   let sum = 0;
+//   let counter = 0 ;
 //  while (n!=0) {
+//      sum += n;
+//     counter++
 //   n = +prompt("sonni kiring");
-//   sum += n
 //  }
-//  console.log(sum % n);
+//  console.log(sum / counter);
 
 // 4.TERNARY operatori ga oid masalalar
 
@@ -471,6 +487,12 @@
 // ==================================================
 // 8-masala
 // Foydalanuvchi kiritgan sonning faktorialini hisoblang.
+//  let num = +prompt("sonni kiriting");
+//  let sum = 1;
+//  for (let i = 0; i <= num; i++) {
+//     sum *= i
+//  }
+// console.log(sum);
 
 // ==================================================
 // 9-masala
@@ -548,30 +570,160 @@
 
 // ==================================================
 // 1-masala
+// Foydalanuvchidan son kiritishni so‘rang va bu son 3 ga bo‘linadiganmi yoki yo‘qligini ternary operator yordamida aniqlang. Keyin 1 dan shu songacha bo‘lgan barcha sonlarni chiqarib bering.
+// let num = +prompt('sonni kiriting')
+// let n = (num%3==0) ? console.log('bolinadi') :  console.log('bolinmaydi');
+// for (let i = 1; i <=num; i++){
+//     console.log(i);
+// }
+
 
 // ==================================================
 // 2-masala
+// Foydalanuvchi kiritgan oy raqamiga mos faslni (switch-case) aniqlang va 1 dan shu oy raqamigacha bo‘lgan sonlarni (for) ekranga chiqaring.
+// let month = +prompt("OY raqamini kiriting");
+
+// switch (month) {
+//   case 1:
+//     console.log("Qish");
+//     break;
+//   case 2:
+//     console.log("Qish");
+//     break;
+//   case 3:
+//     console.log("Bahor");
+//     break;
+//   case 4:
+//     console.log("Bahor");
+//     break;
+//   case 5:
+//     console.log("Bahor");
+//     break;
+//   case 6:
+//     console.log("Yoz");
+//     break;
+//   case 7:
+//     console.log("Yoz");
+//     break;
+//   case 8:
+//     console.log("Yoz");
+//     break;
+//   case 9:
+//     console.log("Kuz");
+//     break;
+//   case 10:
+//     console.log("Kuz");
+//     break;
+//   case 11:
+//     console.log("Kuz");
+//     break;
+//   case 12:
+//     console.log("Qish");
+//     break;
+//   default:
+//     console.log("Bunday oy raqami mavjud emas");
+
+//     break;
+// }
+// for (let i = 1; i<=month; i++){
+//     console.log(i);
+// }
 
 // ==================================================
 // 3-masala
+// Tasodifiy son hosil qiling va bu son juft yoki toq ekanligini aniqlang. Agar son juft bo‘lsa, 1 dan 20 gacha bo‘lgan juft sonlarni chiqarib bering (for).
+// let num = Math.trunc(Math.random() * 100)
+// console.log(num)
+// if (num % 2 == 0 ){
+//     console.log('juft son ');
+//     for (let i = 2;  i<= 20; i += 2 ) {
+//         console.log(i);
+//     }
+// }else{
+//     console.log('juft son emas');
+// }
+
 
 // ==================================================
 // 4-masala
+// Foydalanuvchidan musbat son kiritishni so‘rang va uning faktorialini hisoblang (while). Keyin sonning modul qiymatini toping (Math.abs).
+// let num = +prompt("sonni kiriting")
+// let sum = 1;
+// for (let i = 1; i<= num; i++){
+//     sum*=i
+// }
+// console.log(Math.abc(sum));
+
 
 // ==================================================
 // 5-masala
+// Foydalanuvchidan hafta kuni raqamini kiritishni so‘rang (switch-case) va unga mos kun nomini chiqaring. Agar kun raqami juft bo‘lsa, qo‘shimcha ravishda 1 dan 10 gacha bo‘lgan sonlarni chiqarib bering (for).
+
+// let week = +prompt("hafta kunlarini kiriting");
+
+// switch (week) {
+//   case 1:
+//     console.log("Dushanba");
+//     break;
+//   case 2:
+//     console.log("Seshanba");
+//     break;
+//   case 3:
+//     console.log("Chorshanba");
+//     break;
+//   case 4:
+//     console.log("Payshanba");
+//     break;
+//   case 5:
+//     console.log("Juma");
+//     break;
+//   case 6:
+//     console.log("Shanba");
+//     break;
+//   case 7:
+//     console.log("Yakshanba");
+//     break;
+//   default:
+//     console.log("bunday hafta kuni mavjud emas");
+//     break;
+// }
+// if (week%2==0){
+// for (let i = 1; i <= 10;i++) {
+//         console.log(i);
+// }
+// }
 
 // ==================================================
 // 6-masala
+// Tasodifiy son hosil qilib, uni butun qismiga keltiring (Math.trunc) va bu songacha bo‘lgan barcha sonlarning yig‘indisini hisoblang (while).
+// let num = Math.trunc(Math.random()*100)
+// console.log(`tasodifiy son ${num}`)
+// let sum = 0; 
+// let i = 1;
+// while (i<=num) {
+//     i++
+//     sum+=i
+// }
+// console.log(sum);
+
 
 // ==================================================
 // 7-masala
+// Foydalanuvchi manfiy son kiritmaguncha sonlarni kiritishni davom ettiring (do...while). Yakunida barcha kiritilgan sonlarning o‘rtacha qiymatini hisoblang.
+// let num ;
+// let sum = 0;
+// let counter = 0;
+// do {
+//     num = +prompt("sonni kiriting");
+//     if (num>=0){
+//         sum+= num
+//         counter ++
+//     }
+// }while (num>=0) {
+//     console.log(sum/counter);
+    
+// }
 
 // ==================================================
 // 8-masala
-
-// ==================================================
-// 9-masala
-
-// ==================================================
-// 10-masala
+// Foydalanuvchidan 1 dan 7 gacha son kiritishni so‘rang (switch-case). Agar son 3 yoki 6
